@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #272511;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.header #Main_logo {
+  height: auto;
+  width: 30vw;
+}
+#redline {
+  background-color: #b8bb26;
+  height: 4px;
+  width: 100%;
+  margin-bottom: 1.5vh;
+}
+
+.menu {
+  position: relative;
+  width: 100vw;
+  height: 31px;
+}
+
+.menu #About_Me {
+  position: absolute;
+  left: calc(50% + 180.17px);
+  transform: translateX(-50%);
+}
+
+.menu #Contacts {
+  position: absolute;
+  left: calc(50% - 180.17px);
+  transform: translateX(-50%);
+}
+
+.menu #Homepage {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #706d54
+}
+.menu a {
+  color: #ebdbb2;
+  background-color: #665c54;
+  border: 3px solid #9a7b4f;
+  border-radius: 20%;
+  padding: 3px;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+.menu a:hover {
+  background-color: #706d54;
+}
+
+/* Greeting text */
+.greeting {
+  position: relative;
+  top: calc(7.2vh - 31px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: fit-content;
+  color: #ebdbb2;
+}
+
+.greeting h1 {
+  position: relative;
+  text-align: center;
+}
+
+.greeting h2 {
+  position: relative;
+  text-align: center;
+}
+
+.other-info {
+  position: relative;
+  color: #ebdbb2;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2em;
+  top: calc(16.6vh - 31px);
+  width: fit-content;
+}
+
+.other-info p {
+  position: relative;
+  margin-left: 0.5vw;
+}
+
+/* Languages */
+.languages {
+  position: fixed;
+  bottom: 0;
+  right: 0.25vw;
+  margin-bottom: 1vh;
+  font-family: "Roboto", "sans-serif";
+  font-weight: bold;
+}
+
+.languages #ru {
+  text-decoration: none;
+  color: #ebdbb2;
+}
+
+.languages #en,
+.languages #ua {
+  text-decoration: none;
+  margin-right: 0.5vw;
+  color: #ebdbb2;
+}
+
+.languages #ua {
+  text-decoration: underline 4px #b8bb26;
+}
+
+.copyright {
+  position: fixed;
+  bottom: 0;
+  left: 0.25vw;
+  margin-bottom: 1vh;
+  color: #ebdbb2;
+}
