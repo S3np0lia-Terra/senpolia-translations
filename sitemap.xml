@@ -5,7 +5,7 @@
   <url>
     <loc>https://senpolia-translations.pages.dev/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://senpolia-translations.pages.dev"/>
-    <xhtml:link rel="alternate" hreflang="ua" href="https://senpolia-translations.pages.dev/ua"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://senpolia-translations.pages.dev/ua"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://senpolia-translations.pages.dev/ru"/>
   </url>
 
@@ -13,7 +13,7 @@
   <url>
     <loc>https://senpolia-translations.pages.dev/about/about</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://senpolia-translations.pages.dev/about/about"/>
-    <xhtml:link rel="alternate" hreflang="ua" href="https://senpolia-translations.pages.dev/ua/about/about"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://senpolia-translations.pages.dev/ua/about/about"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://senpolia-translations.pages.dev/ru/about/about"/>
   </url>
 
@@ -21,7 +21,7 @@
   <url>
     <loc>https://senpolia-translations.pages.dev/contacts/contacts</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://senpolia-translations.pages.dev/contacts/contacts"/>
-    <xhtml:link rel="alternate" hreflang="ua" href="https://senpolia-translations.pages.dev/ua/contacts/contacts"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://senpolia-translations.pages.dev/ua/contacts/contacts"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://senpolia-translations.pages.dev/ru/contacts/contacts"/>
   </url>
 
