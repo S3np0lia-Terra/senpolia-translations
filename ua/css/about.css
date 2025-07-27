@@ -55,6 +55,8 @@ body {
   .menu #Contacts {
     left: calc(50% - 100.17px);
   }
+}
+
 .menu a {
   color: #ebdbb2;
   background-color: #665c54;
