@@ -47,6 +47,16 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
+
+@media screen and (width <= 500px) {
+  .menu #About_Me {
+    left: calc(50% + 100.17px);
+  }
+  .menu #Contacts {
+    left: calc(50% - 100.17px);
+  }
+}
+
 .menu a {
   color: #ebdbb2;
   background-color: #665c54;
@@ -67,6 +77,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   width: fit-content;
+  max-width: 100%;
   color: #ebdbb2;
 }
 
@@ -87,6 +98,7 @@ body {
   font-size: 1.2em;
   top: calc(16.6vh - 31px);
   width: fit-content;
+  max-width: 100%;
 }
 
 .aboutme-otherinfo p {
@@ -114,6 +126,18 @@ body {
   position: relative;
 }
 
+@media screen and (width <= 500px) {
+  .areas-container #areas-1,
+  .areas-container #areas-2,
+  .areas-container #areas-3 {
+    margin-left: 0;
+  }
+  .areas-container {
+    flex-direction: column;
+    margin-left: 8vw;
+  }
+}
+
 /* Languages */
 .languages {
   position: fixed;
@@ -122,6 +146,7 @@ body {
   margin-bottom: 1vh;
   font-family: "Roboto", "sans-serif";
   font-weight: bold;
+  z-index: 100;
 }
 
 .languages #ru {
@@ -146,4 +171,5 @@ body {
   left: 0.25vw;
   margin-bottom: 1vh;
   color: #ebdbb2;
+  z-index: -1;
 }

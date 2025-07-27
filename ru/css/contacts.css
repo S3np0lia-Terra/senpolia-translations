@@ -47,6 +47,15 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
+
+@media screen and (width <= 500px) {
+  .menu #About_Me {
+    left: calc(50% + 100.17px);
+  }
+  .menu #Contacts {
+    left: calc(50% - 100.17px);
+  }
+
 .menu a {
   color: #ebdbb2;
   background-color: #665c54;
@@ -68,6 +77,7 @@ h1 {
   left: 50%;
   transform: translateX(-50%);
   width: fit-content;
+  max-width: 100%;
   color: #ebdbb2;
 }
 
@@ -98,6 +108,7 @@ h1 {
   margin-bottom: 1vh;
   font-family: "Roboto", "sans-serif";
   font-weight: bold;
+  z-index: 100;
 }
 
 .languages #ru {
@@ -122,4 +133,5 @@ h1 {
   left: 0.25vw;
   margin-bottom: 1vh;
   color: #ebdbb2;
+  z-index: -1;
 }
