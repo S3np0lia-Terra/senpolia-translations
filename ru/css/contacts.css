@@ -84,6 +84,12 @@ h1 {
   height: 96px;
 }
 
+@media screen and (width <= 500px) {
+  .logos-container {
+    flex-wrap: wrap
+  }
+}
+
 /* Languages */
 .languages {
   position: fixed;
