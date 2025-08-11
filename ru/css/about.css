@@ -262,6 +262,20 @@ main {
   }
 }
 
+@media screen and (height <= 840px) {
+  .copyright {
+    position: relative;
+    margin-top: 2vh;
+  }
+}
+
+@media screen and (height <= 690px) {
+  .other-info {
+    margin-top: 9vh;
+    padding-top: 5vh;
+  }
+}
+
 /* Animations */
 
 @keyframes text-from-right {
