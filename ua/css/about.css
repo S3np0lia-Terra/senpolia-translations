@@ -270,7 +270,7 @@ main {
 }
 
 @media screen and (height <= 690px) {
-  .other-info {
+  main {
     margin-top: 9vh;
     padding-top: 5vh;
   }
