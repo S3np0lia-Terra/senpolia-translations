@@ -162,6 +162,27 @@ h1 {
   z-index: -1;
 }
 
+@media screen and (width <= 599px) {
+  h1 {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (width <= 500px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  .logos-container {
+    top: 6vh;
+  }
+}
+
+@media screen and (width <= 332px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+}
+
 /* Animations */
 
 @keyframes text-from-right {
