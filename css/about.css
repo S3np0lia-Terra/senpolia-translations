@@ -3,30 +3,50 @@
   padding: 0;
 }
 
+html,
 body {
-  background-color: #272511;
+  height: 100vh;
+  width: 100vw;
 }
 
-.header {
-  display: flex;
-  justify-content: center;
+body::before {
+  content: '';
+  background-image: url(../images/leaves.webp);
+  filter: blur(1.1px) brightness(0.9);
+  position: fixed;
+  inset: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
 }
 
-.header #Main_logo {
-  height: auto;
-  width: 30vw;
+header {
+  overflow-x: hidden;
+  padding-bottom: 5px;
 }
-#redline {
-  background-color: #b8bb26;
-  height: 4px;
-  width: 100%;
-  margin-bottom: 1.5vh;
+
+header #Main_logo {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 20vh;
+  width: auto;
+}
+
+@media screen and (width <= 365px) {
+  header #Main_logo {
+    height: 15vh;
+    width: auto;
+  }
 }
 
 .menu {
   position: relative;
   width: 100vw;
   height: 31px;
+  text-wrap-mode: nowrap;
+  animation: left-slide 2s ease-out;
 }
 
 .menu #About_Me {
@@ -66,19 +86,23 @@ body {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
+  transition: all 50ms linear;
 }
 .menu a:hover {
   background-color: #706d54;
+  outline: 2px solid #706d54;
+  outline-offset: 3px;
 }
 
 .aboutme-info {
   position: relative;
-  top: calc(7.2vh - 31px);
+  top: calc(6.6vh - 31px);
   left: 50%;
   transform: translateX(-50%);
   width: fit-content;
   max-width: 100%;
   color: #ebdbb2;
+  padding-bottom: 4vh;
 }
 
 .aboutme-info h1 {
@@ -91,12 +115,24 @@ body {
   text-align: center;
 }
 
+main {
+  position: relative;
+  top: calc(4.6vh - 31px);
+  background-color: #1c2527;
+  overflow-x: hidden;
+  border: 1px solid transparent;
+  border-radius: 5% / 15%;
+  margin-left: 0.7vw;
+  margin-right: 0.7vw;
+  padding-bottom: 2vh;
+}
+
 .aboutme-otherinfo {
   position: relative;
   color: #ebdbb2;
   font-family: "Roboto", sans-serif;
   font-size: 1.2em;
-  top: calc(16.6vh - 31px);
+  top: calc(4.6vh - 31px);
   width: fit-content;
   max-width: 100%;
 }
@@ -104,11 +140,14 @@ body {
 .aboutme-otherinfo p {
   position: relative;
   margin-left: 0.5vw;
+  text-align: center;
 }
 
 .areas-container {
   position: relative;
   display: flex;
+  justify-content: center;
+  animation: left-slide 2s ease-out;
 }
 
 .areas-container #areas-1 {
@@ -172,4 +211,76 @@ body {
   margin-bottom: 1vh;
   color: #ebdbb2;
   z-index: -1;
+}
+
+/* Border-radius-related Media Queries */
+@media screen and (500px <= width <= 1024px) {
+  main {
+    border-radius: 8% / 10%;
+  }
+}
+@media screen and (400px <= width <= 500px) {
+  main {
+    border-radius: 10% / 7%;
+  }
+}
+
+@media screen and (360px <= width <= 399px) {
+  main {
+    border-radius: 10% / 6%;
+  }
+}
+ 
+@media screen and (width <= 359px) {
+  main {
+    border-radius: 13% / 6%;
+  }
+}
+
+/* Font adjusting */
+
+@media screen and (width <= 655px) {
+  main {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (width <= 736px) {
+  html,
+  body {
+    height: auto;
+  }
+
+  footer {
+    position: relative;
+    bottom: 0;
+  }
+
+  .copyright {
+    position: relative;
+    margin-top: 2vh;
+  }
+}
+
+/* Animations */
+
+@keyframes text-from-right {
+  from {right: 200vw;}
+  to {right: 50%; transform: translateX(50%);}
+}
+
+@keyframes left-slide {
+  from {left:200vw;}
+  to {left:0;}
+}
+
+/* Paragraphs Animation */
+.first {
+  animation: text-from-right 2s ease-out;
+}
+.second {
+  animation: left-slide 2s ease-out;
+}
+.last {
+  animation: text-from-right 2s ease-out;
 }
